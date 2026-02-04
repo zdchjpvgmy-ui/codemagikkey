@@ -8,7 +8,7 @@ workflows:
         - signing            # CERTIFICATE_P12, CERTIFICATE_PASSWORD, MOBILEPROVISION
         - appstore_connect   # APP_STORE_CONNECT_ISSUER_ID, APP_STORE_CONNECT_KEY_IDENTIFIER, APP_STORE_CONNECT_PRIVATE_KEY
       vars:
-        XCODE_PROJECT: "Money Permission Journal"
+        XCODE_PROJECT: "Money Permission Journal.xcodeproj"
         XCODE_SCHEME: "Money Permission Journal"
         BUNDLE_ID: "ia.premissa.ninastudio"
         TEAM_ID: "OVERRIDE_BY_PROFILE"
