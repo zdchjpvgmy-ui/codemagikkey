@@ -8,9 +8,9 @@ workflows:
         - signing            # CERTIFICATE_P12, CERTIFICATE_PASSWORD, MOBILEPROVISION
         - appstore_connect   # APP_STORE_CONNECT_ISSUER_ID, APP_STORE_CONNECT_KEY_IDENTIFIER, APP_STORE_CONNECT_PRIVATE_KEY
       vars:
-        XCODE_PROJECT: "Finance-Regret-Manager.xcodeproj"
-        XCODE_SCHEME: "Finance-Regret-Manager"
-        BUNDLE_ID: "com.financeregret.denys1er"
+        XCODE_PROJECT: "Money Permission Journal"
+        XCODE_SCHEME: "Money Permission Journal"
+        BUNDLE_ID: "ia.premissa.ninastudio"
         TEAM_ID: "OVERRIDE_BY_PROFILE"
         EXPORT_METHOD: "app-store"
 
@@ -133,7 +133,7 @@ workflows:
 
       - name: "Archive and export IPA (xcodebuild)"
         script: |
-          ARCHIVE_PATH="$CM_BUILD_DIR/Finance-Regret-Manager.xcarchive"
+          ARCHIVE_PATH="$CM_BUILD_DIR/Money Permission Journal.xcarchive"
           EXPORT_PATH="$CM_EXPORT_DIR"
 
           EXTRA_FLAGS=( CURRENT_PROJECT_VERSION="$BUILD_NUM" )
